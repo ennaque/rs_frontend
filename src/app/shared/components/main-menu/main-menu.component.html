@@ -1,0 +1,27 @@
+<ion-list class="ion-no-padding">
+    <ion-item-divider color="light">
+        <ion-label>
+            <h1>Меню</h1>
+        </ion-label>
+    </ion-item-divider>
+    <ion-menu-toggle menu="main-menu" [autoHide]="false">
+        <ion-item
+                routerLink="/"
+                routerLinkActive="active"
+                lines="full"
+        >
+            <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+            Главная
+        </ion-item>
+    </ion-menu-toggle>
+    <ion-menu-toggle menu="main-menu" [autoHide]="false">
+        <ion-item
+                routerLink="/auth/login"
+                routerLinkActive="active"
+                lines="full"
+        >
+            <ion-icon name="add-circle-outline" slot="start"></ion-icon>
+            Логин
+        </ion-item>
+    </ion-menu-toggle>
+</ion-list>
